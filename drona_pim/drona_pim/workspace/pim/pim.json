@@ -1,0 +1,57 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"lqOZQfpZGg\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">PIM</span>\",\"col\":12}},{\"id\":\"QU0QjSrF_Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"rJxpnjiIut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brand\",\"col\":4}},{\"id\":\"85-0sTYgfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Group\",\"col\":4}},{\"id\":\"eJhrbV7b79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"UOM\",\"col\":4}}]",
+ "creation": "2023-12-19 02:26:11.146108",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "retail",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "PIM",
+ "links": [],
+ "modified": "2023-12-19 02:52:33.166194",
+ "modified_by": "Administrator",
+ "module": "Drona Pim",
+ "name": "PIM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "UOM",
+   "link_to": "UOM",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Brand",
+   "link_to": "Brand",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item Group",
+   "link_to": "Item Group",
+   "type": "DocType"
+  }
+ ],
+ "title": "PIM"
+}
