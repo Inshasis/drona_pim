@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include drona_pim *.css
+recursive-include drona_pim *.csv
+recursive-include drona_pim *.html
+recursive-include drona_pim *.ico
+recursive-include drona_pim *.js
+recursive-include drona_pim *.json
+recursive-include drona_pim *.md
+recursive-include drona_pim *.png
+recursive-include drona_pim *.py
+recursive-include drona_pim *.svg
+recursive-include drona_pim *.txt
+recursive-exclude drona_pim *.pyc
