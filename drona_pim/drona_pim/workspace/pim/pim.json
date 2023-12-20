@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"lqOZQfpZGg\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">PIM</span>\",\"col\":12}},{\"id\":\"QU0QjSrF_Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"rJxpnjiIut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brand\",\"col\":4}},{\"id\":\"85-0sTYgfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Group\",\"col\":4}},{\"id\":\"eJhrbV7b79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"UOM\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Pending Item",
+   "label": "Pending Item"
+  }
+ ],
+ "content": "[{\"id\":\"svtfM5wiZu\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Pending Item\",\"col\":12}},{\"id\":\"VFzoAOgrxI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Document</b></span>\",\"col\":12}},{\"id\":\"QU0QjSrF_Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"rJxpnjiIut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brand\",\"col\":4}},{\"id\":\"85-0sTYgfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Group\",\"col\":4}},{\"id\":\"eJhrbV7b79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SKU\",\"col\":4}},{\"id\":\"gpojYAQax-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Category\",\"col\":3}}]",
  "creation": "2023-12-19 02:26:11.146108",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,7 +17,7 @@
  "is_hidden": 0,
  "label": "PIM",
  "links": [],
- "modified": "2023-12-19 02:52:33.166194",
+ "modified": "2023-12-20 23:58:47.456863",
  "modified_by": "Administrator",
  "module": "Drona Pim",
  "name": "PIM",
@@ -29,20 +34,15 @@
    "doc_view": "List",
    "label": "Item",
    "link_to": "Item",
+   "stats_filter": "[]",
    "type": "DocType"
   },
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "UOM",
-   "link_to": "UOM",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Brand",
-   "link_to": "Brand",
+   "label": "SKU",
+   "link_to": "SKU",
+   "stats_filter": "[]",
    "type": "DocType"
   },
   {
@@ -50,6 +50,23 @@
    "doc_view": "List",
    "label": "Item Group",
    "link_to": "Item Group",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Brand",
+   "link_to": "Brand",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Product Category",
+   "link_to": "Product Category",
+   "stats_filter": "[]",
    "type": "DocType"
   }
  ],
