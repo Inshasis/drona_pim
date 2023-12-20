@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestItemCategory(FrappeTestCase):
+class TestSKU(FrappeTestCase):
 	pass

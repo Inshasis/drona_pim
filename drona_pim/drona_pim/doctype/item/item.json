@@ -6,26 +6,45 @@
  "autoname": "field:item_code",
  "creation": "2023-12-19 02:10:42.962666",
  "default_view": "List",
- "description": "A Product or a Service that is bought, sold or kept in stock.",
+ "description": "A Product.",
  "doctype": "DocType",
  "document_type": "Setup",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "details",
-  "naming_series",
   "item_code",
-  "item_name",
-  "item_group",
-  "stock_uom",
+  "product_name",
+  "sku",
   "column_break0",
-  "disabled",
   "brand",
   "image",
   "section_break_11",
-  "description",
-  "sb_barcodes",
-  "barcodes"
+  "short_description",
+  "long_description",
+  "product_category_detail_section",
+  "product_category",
+  "column_break_pklx1",
+  "sub_category_level_one",
+  "sub_category_level_two",
+  "sub_category_level_three",
+  "details_section",
+  "price",
+  "column_break_jfckh",
+  "product_unit",
+  "package_type",
+  "packaging_details_section",
+  "barcode",
+  "column_break_ifjct",
+  "colour",
+  "size",
+  "dimension",
+  "weight",
+  "more_details_section",
+  "country_manufacture",
+  "column_break_jasdx",
+  "status",
+  "is_active"
  ],
  "fields": [
   {
@@ -36,17 +55,11 @@
    "options": "fa fa-flag"
   },
   {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "STO-ITEM-.YYYY.-",
-   "set_only_once": 1
-  },
-  {
    "bold": 1,
    "fieldname": "item_code",
    "fieldtype": "Data",
    "in_global_search": 1,
+   "in_list_view": 1,
    "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Data",
@@ -54,48 +67,8 @@
    "unique": 1
   },
   {
-   "bold": 1,
-   "fieldname": "item_name",
-   "fieldtype": "Data",
-   "in_global_search": 1,
-   "label": "Item Name",
-   "oldfieldname": "item_name",
-   "oldfieldtype": "Data",
-   "search_index": 1
-  },
-  {
-   "fieldname": "item_group",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Item Group",
-   "oldfieldname": "item_group",
-   "oldfieldtype": "Link",
-   "options": "Item Group",
-   "reqd": 1,
-   "search_index": 1
-  },
-  {
-   "fieldname": "stock_uom",
-   "fieldtype": "Link",
-   "ignore_user_permissions": 1,
-   "label": "Default Unit of Measure",
-   "oldfieldname": "stock_uom",
-   "oldfieldtype": "Link",
-   "options": "UOM",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break0",
    "fieldtype": "Column Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "disabled",
-   "fieldtype": "Check",
-   "label": "Disabled",
-   "search_index": 1
   },
   {
    "fieldname": "image",
@@ -105,17 +78,10 @@
    "options": "image"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_11",
    "fieldtype": "Section Break",
    "label": "Description"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text Editor",
-   "in_preview": 1,
-   "label": "Description",
-   "oldfieldname": "description",
-   "oldfieldtype": "Text"
   },
   {
    "fieldname": "brand",
@@ -124,18 +90,174 @@
    "oldfieldname": "brand",
    "oldfieldtype": "Link",
    "options": "Brand",
-   "print_hide": 1
+   "print_hide": 1,
+   "reqd": 1
   },
   {
-   "fieldname": "sb_barcodes",
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "SKU",
+   "oldfieldname": "stock_uom",
+   "oldfieldtype": "Link",
+   "options": "SKU",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "long_description",
+   "fieldtype": "Text Editor",
+   "label": "Long Description"
+  },
+  {
+   "bold": 1,
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "in_preview": 1,
+   "label": "Short Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text"
+  },
+  {
+   "fieldname": "details_section",
    "fieldtype": "Section Break",
-   "label": "Barcodes"
+   "label": "Product Details"
   },
   {
-   "fieldname": "barcodes",
-   "fieldtype": "Table",
-   "label": "Barcodes",
-   "options": "Item Barcode"
+   "default": "0",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_unit",
+   "fieldtype": "Link",
+   "label": "Product Unit",
+   "options": "SKU"
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Data",
+   "label": "Package Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jfckh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packaging_details_section",
+   "fieldtype": "Section Break",
+   "label": "Packaging Details"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Link",
+   "label": "Colour",
+   "options": "Colour"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "dimension",
+   "fieldtype": "Data",
+   "label": "Dimension"
+  },
+  {
+   "fieldname": "column_break_ifjct",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Link",
+   "label": "Weight",
+   "options": "Weight"
+  },
+  {
+   "fieldname": "more_details_section",
+   "fieldtype": "Section Break",
+   "label": "More Details"
+  },
+  {
+   "fieldname": "country_manufacture",
+   "fieldtype": "Link",
+   "label": "Country Manufacture",
+   "options": "Country"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jasdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nPending\nIn Reviwe\nCompleted",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Product Name",
+   "oldfieldname": "item_name",
+   "oldfieldtype": "Data",
+   "search_index": 1
+  },
+  {
+   "fieldname": "product_category_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Product Category Detail"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "column_break_pklx1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_category_level_one",
+   "fieldtype": "Link",
+   "label": "Sub Category Level One",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "sub_category_level_two",
+   "fieldtype": "Link",
+   "label": "Sub Category Level Two",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "sub_category_level_three",
+   "fieldtype": "Link",
+   "label": "Sub Category Level Three",
+   "options": "Product Category"
   }
  ],
  "icon": "fa fa-tag",
@@ -143,7 +265,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2023-12-19 02:30:37.378398",
+ "modified": "2023-12-20 23:37:02.652490",
  "modified_by": "Administrator",
  "module": "Drona Pim",
  "name": "Item",
@@ -165,12 +287,12 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "item_name,description,item_group",
+ "search_fields": "product_name,brand",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "item_name",
+ "title_field": "product_name",
  "track_changes": 1
 }
