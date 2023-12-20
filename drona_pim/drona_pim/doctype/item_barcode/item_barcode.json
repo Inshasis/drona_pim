@@ -33,12 +33,12 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "UOM",
-   "options": "SKU"
+   "options": "UOM"
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2023-12-20 21:05:47.284686",
+ "modified": "2023-12-21 00:13:14.825811",
  "modified_by": "Administrator",
  "module": "Drona Pim",
  "name": "Item Barcode",

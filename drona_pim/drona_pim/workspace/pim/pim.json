@@ -5,7 +5,7 @@
    "label": "Pending Item"
   }
  ],
- "content": "[{\"id\":\"svtfM5wiZu\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Pending Item\",\"col\":12}},{\"id\":\"VFzoAOgrxI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Document</b></span>\",\"col\":12}},{\"id\":\"QU0QjSrF_Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"rJxpnjiIut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brand\",\"col\":4}},{\"id\":\"85-0sTYgfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Group\",\"col\":4}},{\"id\":\"eJhrbV7b79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SKU\",\"col\":4}},{\"id\":\"gpojYAQax-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Category\",\"col\":3}}]",
+ "content": "[{\"id\":\"svtfM5wiZu\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Pending Item\",\"col\":12}},{\"id\":\"VFzoAOgrxI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span><br>\",\"col\":12}},{\"id\":\"QU0QjSrF_Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"rJxpnjiIut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brand\",\"col\":4}},{\"id\":\"85-0sTYgfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Group\",\"col\":4}},{\"id\":\"eJhrbV7b79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"UOM\",\"col\":4}},{\"id\":\"gpojYAQax-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Category\",\"col\":3}}]",
  "creation": "2023-12-19 02:26:11.146108",
  "custom_blocks": [],
  "docstatus": 0,
@@ -17,7 +17,7 @@
  "is_hidden": 0,
  "label": "PIM",
  "links": [],
- "modified": "2023-12-20 23:58:47.456863",
+ "modified": "2023-12-21 00:21:10.579391",
  "modified_by": "Administrator",
  "module": "Drona Pim",
  "name": "PIM",
@@ -38,10 +38,10 @@
    "type": "DocType"
   },
   {
-   "color": "Grey",
+   "color": "Orange",
    "doc_view": "List",
-   "label": "SKU",
-   "link_to": "SKU",
+   "label": "UOM",
+   "link_to": "UOM",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -62,7 +62,7 @@
    "type": "DocType"
   },
   {
-   "color": "Grey",
+   "color": "Orange",
    "doc_view": "List",
    "label": "Product Category",
    "link_to": "Product Category",
